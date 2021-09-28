@@ -25,12 +25,3 @@ class DialoGPT:
         while True:
             user_input = input("User: ")
             print("Bot:", self(user_input))
-
-
-def main():
-    model = DialoGPT()
-    model.run()
-
-
-if __name__ == '__main__':
-    main()
