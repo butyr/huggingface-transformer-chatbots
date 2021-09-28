@@ -14,12 +14,12 @@ class DialoGPT:
         self.model = AutoModelForCausalLM.from_pretrained('./models/dialogpt')
         self.tokenizer = AutoTokenizer.from_pretrained('./models/dialogpt')
 
-    def __call__(self, user_query: str) -> str:
-        inputs = self.tokenizer.encode(user_query + self.tokenizer.eos_token, return_tensors='pt')
-        reply_ids = self.model.generate(inputs, max_length=1250, pad_token_id=self.tokenizer.eos_token_id)
-        bot_answer = self.tokenizer.decode(reply_ids[:, inputs.shape[-1]:][0], skip_special_tokens=True)
+    def __call__(self, inputs: str) -> str:
+        inputs_tokenized = self.tokenizer.encode(inputs+ self.tokenizer.eos_token, return_tensors='pt')
+        reply_ids = self.model.generate(inputs_tokenized, max_length=1250, pad_token_id=self.tokenizer.eos_token_id)
+        reply = self.tokenizer.decode(reply_ids[:, inputs_tokenized.shape[-1]:][0], skip_special_tokens=True)
 
-        return bot_answer
+        return reply
 
     def run(self):
         while True:
