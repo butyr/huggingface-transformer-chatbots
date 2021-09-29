@@ -1,4 +1,4 @@
-# python-transformer-chatbots
+# huggingface-transformer-chatbots
 
 Huggingface makes it easy to build your own basic chatbot based on pretrained transformer models. In this project you can find a handful of examples to play around with. 
 
