@@ -5,7 +5,7 @@ import os
 class BlenderBot:
     def __init__(
         self,
-        model_name='facebook/blenderbot_small-90M',
+        model_name: str ='facebook/blenderbot_small-90M',
     ):
         if not os.path.exists('./models/blenderbot'):
             BlenderbotSmallForConditionalGeneration.from_pretrained(model_name).save_pretrained('./models/blenderbot')

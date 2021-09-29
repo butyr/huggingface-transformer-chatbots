@@ -5,7 +5,7 @@ import os
 class DialoGPT:
     def __init__(
         self,
-        model_name='microsoft/DialoGPT-large',
+        model_name: str ='microsoft/DialoGPT-large',
     ):
         if not os.path.exists('./models/dialogpt'):
             AutoModelForCausalLM.from_pretrained(model_name).save_pretrained('./models/dialogpt')
