@@ -1,3 +1,9 @@
+"""
+Adapted from:
+https://mandgie.medium.com/how-to-build-your-own-chatbot-f5848ebcba8d
+"""
+
+
 from transformers import BlenderbotSmallTokenizer, BlenderbotSmallForConditionalGeneration
 import os
 

@@ -1,3 +1,8 @@
+"""
+Adapted from:
+https://www.machinecurve.com/index.php/2021/03/16/easy-chatbot-with-dialogpt-machine-learning-and-huggingface-transformers/
+"""
+
 from transformers import AutoModelForCausalLM, AutoTokenizer
 import os
 
