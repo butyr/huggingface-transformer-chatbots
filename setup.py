@@ -41,7 +41,7 @@ setuptools.setup(
         'joblib==1.0.1',
         'numpy==1.21.2',
         'packaging==21.0',
-        'Pillow==8.3.2',
+        'Pillow==9.0.0',
         'pyparsing==2.4.7',
         'PyYAML==5.4.1',
         'regex==2021.9.24',
