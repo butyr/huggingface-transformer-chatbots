@@ -8,7 +8,7 @@ importlib-metadata==4.8.1
 joblib==1.0.1
 numpy==1.21.2
 packaging==21.0
-Pillow==9.0.0
+Pillow==9.0.1
 pyparsing==2.4.7
 PyYAML==5.4.1
 regex==2021.9.24
